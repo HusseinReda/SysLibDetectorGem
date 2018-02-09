@@ -9,6 +9,13 @@ SysLibDetector collects your project's local gems and your system's operating sy
 #TODO
 Adding the ability to add new gem's system libraries
 
+## Dependencies
+
+* [Json](https://rubygems.org/gems/json): for parsing json responses from the web-service.
+* [System](https://rubygems.org/gems/system): for system's operating system detection
+* [Thor](https://rubygems.org/gems/thor): for building a command-line interface.
+* [RestClient](https://rubygems.org/gems/rest-client): a rest client for the web-service communication
+
 ## Installation
 
 Add this line to your application's Gemfile:
