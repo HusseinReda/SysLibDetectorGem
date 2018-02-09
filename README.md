@@ -68,7 +68,7 @@ This can be done by making a simple POST API request to the web-service (contrib
 			"platform": "linux",
 			"name": "zlib1g-dev"
 		},
-        {
+        	{
 			"platform": "linux",
 			"name": "liblzma-dev"
 		},
