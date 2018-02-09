@@ -1,6 +1,9 @@
 require "thor"
 require "sys_lib_detector"
 
+# Namespace for classes handling the whole process of the gem 
+# from collecting the projects' gem, going through system libraries retrieval, 
+# till displaying the results or installing the required system libraries
 module SysLibDetector
 	class Cli < Thor
 

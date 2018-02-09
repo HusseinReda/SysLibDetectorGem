@@ -1,3 +1,4 @@
 module SysLibDetector
-  VERSION = "0.1.0"
+	# current version of the gem
+	VERSION = "0.1.0"
 end

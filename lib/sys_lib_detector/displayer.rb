@@ -1,5 +1,11 @@
 module SysLibDetector
+	# Class responsible for displaying the results of the 
+	# command line interface class
 	class Displayer
+		# Displaying the system libraries retrieved
+		# @param response [Json] The json response of web-service 
+		#	in format { gem_1: [a,b,c], gem_2: [x,y,z] }
+		# @param gems [Array] The current project's gems' names
 		def self.diplay_list_sys_libs(response, gems)
 			display_header(response, gems)
 
@@ -19,6 +25,10 @@ module SysLibDetector
 				return response.keys.count
 			end
 
+			# Displaying the header message after recieving the web-service response
+			# @param response [Json] The json response of web-service 
+			#	in format { gem_1: [a,b,c], gem_2: [x,y,z] }
+			# @param gems [Array] The current project's gems' names
 			def self.display_header(response, gems)
 				gems_found_count = gems_with_libraries_count(response)
 				all_found = gems_found_count == gems.count

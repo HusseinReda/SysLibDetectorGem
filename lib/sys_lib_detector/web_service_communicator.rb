@@ -18,8 +18,8 @@ module SysLibDetector
 
 		# Retrieving the required system libraries by sending a get request 
 		# to the web-service with the gems' names and current operating system
-		# @param gems_names The current project's gems' names
-		# @param os_name The operating system's name as a symbol (:linux, :osx, :windows)
+		# @param gems_names [Array] The current project's gems' names
+		# @param os_name [String] The operating system's name as a symbol (:linux, :osx, :windows)
 		# @return [Json] The web-services's response, 
 		# 	in format { gem_1: [a,b,c], gem_2: [x,y,z] }
 		def retrieve_sys_libraries(gems_names, os_name)
