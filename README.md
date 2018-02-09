@@ -49,15 +49,46 @@ List the **available** required system libraries for your project's gems
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
+## Contributing
+
+### Adding new gem's system libraries
+
+You can contribute yourself in order for making the whole process more reliable and more useful by adding gems' system dependencies.
+
+This can be done by making a simple POST API request to the web-service (contributing endpoint) https://sys-libraries.herokuapp.com/contribute_requests including your email, gem's information (name and version) and the system libraries dependencies, as in this example
+```
+{
+	"email": "you@example.com",
+	"ruby_gem": {
+		"name": "nokogiri",
+		"version": "1.8.2"
+	},
+	"libraries": [
+		{
+			"platform": "linux",
+			"name": "zlib1g-dev"
+		},
+        {
+			"platform": "linux",
+			"name": "liblzma-dev"
+		},
+		{
+			"platform": "osx",
+			"name": "libxml2"
+		}
+	]
+}
+```
+***NOTE:** You can leave `version` field in `ruby_gems` attributes empty
+
+### SysLibDetector gem
+Bug reports and pull requests are welcome on GitHub at https://github.com/HusseinReda/sys_lib_detector.
+The project is always welcoming for different contributions.
+
 ## Future Plans
 
 * Installing the system libraries.
-* Adding the ability to add new gem's system libraries
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/HusseinReda/sys_lib_detector.
-The project is always welcoming for different contributions.
+* Automating the manual review of the contribution requests of adding gems' dependencies
 
 ## License
 
