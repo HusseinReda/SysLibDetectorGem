@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'sys_lib_detector/cli'
+
+SysLibDetector::Cli.start
