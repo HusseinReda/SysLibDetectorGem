@@ -6,7 +6,7 @@ module SysLibDetector
 	# the gem's funcionalities, using Thor's gem
 	class Cli < Thor
 
-		desc "list_all_gems", "listing all the local gems existing in the porject"
+		desc "list_all_gems", "Listing all the local gems existing in the porject"
 		# Listing the local gems existing in the porject
 		def list_all_gems
 			gems = get_gems
