@@ -17,7 +17,7 @@ module SysLibDetector
 		end
 
 		# Retrieving the required system libraries by sending a get request 
-		# to the web-service with the gems' names and current operating system
+		# to the web-service with the gems' names and running operating system
 		# @param gems_names [Array] The current project's gems' names
 		# @param os_name [String] The operating system's name as a symbol (:linux, :osx, :windows)
 		# @return [Json] The web-services's response, 
