@@ -31,19 +31,25 @@ Or install it yourself as:
 
 ## Usage
 
-Show the available methods
+* Show the available methods
 
-    $ sys-lib-detector help
-    
-List your project's gems
+      $ sys-lib-detector help 
 
-    $ sys-lib-detector list_all_gems
+* List your project's gems
 
-List the **available** required system libraries for your project's gems
+      $ sys-lib-detector list_all_gems
 
-    $ sys-lib-detector list_sys_libs
+* List the **available** required system libraries for your project's gems
 
-*Note: The web-service is continuously updated with gem's system libraries dependencies upon the contribution of different contributors, and you among those! Check the contribution part below.
+      $ sys-lib-detector list_sys_libs
+
+	*Note: The web-service is continuously updated with gem's system libraries dependencies upon the contribution of different contributors, and you among those! Check the contribution part below.
+
+* Install the **available** required system libraries for your project's gems
+
+      $ sys-lib-detector install_sys_libs
+
+	*Note: Supported operating systems are Linux and OS X, with package managers `APT` and `Homebrew` respectively.
 
 ## Development
 
@@ -89,8 +95,8 @@ The project is always welcoming for contributions.
 
 ## Future Plans
 
-* Installing the system libraries.
-* Automating the manual review of the contribution requests of adding gems' dependencies
+* Adding Windows to supported operating systems.
+* Automating the manual review of the contribution requests of adding gems' dependencies.
 
 ## License
 
