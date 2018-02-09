@@ -53,7 +53,7 @@ module SysLibDetector
 			end
 
 			# private method for running linux (apt) installing command
-			def linux_install(package)
+			def linux_installer(package)
 				system("sudo apt-get -y install #{package}")
 			end
 

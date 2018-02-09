@@ -31,7 +31,7 @@ module SysLibDetector
 				response = web_service_handler.retrieve_sys_libraries(gems, os)
 				response = clean_response(response)
 
-				Displayer::display_header(response, gems)
+				Displayer::diplay_list_sys_libs(response, gems)
 
 			rescue Exception::NoInternetConnection
 				abort "Please check your internet connectivity"
