@@ -1,18 +1,21 @@
+require 'rest-client'
+require 'json'
+
 module SysLibDetector
 	class WebServiceCommunicator
-		WEB_SERVICE_URL = "https://sys-libraries.herokuapp.com"
+		SERVICE_URL = "https://sys-libraries.herokuapp.com/libraries"
 
 		def initialize
 			# checking internet connectivity
-			return "Please check your internet connectivity" if ping != :pong
+			raise Exception::NoInternetConnection if ping != :pong
 
-			@url = WEB_SERVICE_URI
+			@url = SERVICE_URL
 		end
 
-		def retrieve_dependencies(gems_names, os_name)
+		def retrieve_sys_libraries(gems_names, os_name)
 			params = {
-				os: os_name,
-				gems: gems_names
+				gems: gems_names,
+				os: os_name
 			}
 			response = JSON.parse(RestClient.get(@url, {params: params}))
 		end
