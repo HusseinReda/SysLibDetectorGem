@@ -85,7 +85,7 @@ This can be done by making a simple POST API request to the web-service (contrib
 
 ### SysLibDetector gem
 Bug reports and pull requests are welcome on GitHub at https://github.com/HusseinReda/sys_lib_detector.
-The project is always welcoming for different contributions.
+The project is always welcoming for contributions.
 
 ## Future Plans
 
