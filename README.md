@@ -6,9 +6,6 @@ SysLibDetector helps in solving an irritating issue, which is ruby gems requirin
 
 SysLibDetector collects your project's local gems and your system's operating system information and make an API request with this information to a web-service https://sys-libraries.herokuapp.com, which retrieves the **possibly found** system native libraries required for correct installation and usage of your project's gems.
 
-#TODO
-Adding the ability to add new gem's system libraries
-
 ## Dependencies
 
 * [Json](https://rubygems.org/gems/json): for parsing json responses from the web-service.
@@ -51,6 +48,11 @@ List the **available** required system libraries for your project's gems
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+
+## Future Plans
+
+* Installing the system libraries.
+* Adding the ability to add new gem's system libraries
 
 ## Contributing
 
