@@ -80,6 +80,7 @@ This can be done by making a simple POST API request to the web-service (contrib
 }
 ```
 ***NOTE:** You can leave `version` field in `ruby_gems` attributes empty
+***NOTE:** `platform` field in `libraries` attributes can be any of those: 'linux', 'osx' or 'windows'
 
 ### SysLibDetector gem
 Bug reports and pull requests are welcome on GitHub at https://github.com/HusseinReda/sys_lib_detector.
