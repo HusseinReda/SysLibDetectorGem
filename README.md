@@ -61,7 +61,7 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 You can contribute yourself in order for making the whole process more reliable and more useful by adding gems' system dependencies.
 
-This can be done by making a simple POST API request to the web-service (contributing endpoint) https://sys-libraries.herokuapp.com/contribute_requests including your email, gem's information (name and version) and the system libraries dependencies, as in this example
+This can be done by making a simple POST API request to the web-service (contributing endpoint) https://sys-libraries.herokuapp.com/contribute_requests including your email, gem's information (name and version) and the system libraries dependencies, as in this example:
 ```
 {
 	"email": "you@example.com",
@@ -85,6 +85,8 @@ This can be done by making a simple POST API request to the web-service (contrib
 	]
 }
 ```
+This is a contributing request, which shall go through a manual reviewing process to make sure of its applicablity and correctness, and if so it will be added to the service available libraries.
+
 ***NOTE:** You can leave `version` field in `ruby_gems` attributes empty
 
 ***NOTE:** `platform` field in `libraries` attributes can be any of those: 'linux', 'osx' or 'windows'
